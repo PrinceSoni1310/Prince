@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- Single-file HTML profile for SP Jewellers with dummy product images and prices -->
+<html lang="en">
+<head>
+  <!-- Document character set -->
+  <meta charset="utf-8" />
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Page title shown in browser tab -->
+  <title>SP Jewellers — Company Profile</title>
+  <!-- Google Fonts import -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Simple CSS for styling (responsive and modern) -->
+  <style>
+    /* Root and body styles */
+    :root{--gold:#b8860b;--accent:#8b7500;--muted:#666;--card:#fff;--bg:#f7f6f4}
+    html,body{height:100%;margin:0;padding:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial}
+    body{background:var(--bg);color:#111;line-height:1.45}
+
+    /* Container to center content */
+    .container{max-width:1100px;margin:32px auto;padding:28px}
+
+    /* Header styles */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#ffd27f);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff}
+    h1{margin:0;font-size:20px}
+    .sub{color:var(--muted);font-size:13px}
+
+    /* Hero section */
+    .hero{display:flex;flex-wrap:wrap;gap:24px;margin-top:18px;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,0.9),transparent);border-radius:12px}
+    .hero-left{flex:1;min-width:260px}
+    .hero-right{flex:1;min-width:260px;display:flex;align-items:center;justify-content:center}
+    .hero-card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+
+    /* Grid for product cards */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);display:flex;flex-direction:column}
+    .card img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+    .card h3{margin:10px 0 6px;font-size:16px}
+    .price{font-weight:700;color:var(--gold)}
+    .desc{color:var(--muted);font-size:13px}
+
+    /* Sections */
+    section{margin-top:20px}
+    .section-title{display:flex;align-items:center;gap:12px}
+    .pill{background:var(--gold);color:#fff;padding:6px 10px;border-radius:8px;font-weight:700}
+
+    /* Info list */
+    .info-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+    .info-card{background:linear-gradient(180deg,#fff, #fff);padding:12px;border-radius:10px;min-width:200px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+
+    /* Footer */
+    footer{margin-top:30px;padding:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive adjustments */
+    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero{flex-direction:column}.container{padding:18px}}
+    @media (max-width:520px){.grid{grid-template-columns:1fr}.logo{width:56px;height:56px}.hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container">
+
+    <!-- Header with brand and contact -->
+    <header>
+      <div class="brand">
+        <!-- Logo box with initials -->
+        <div class="logo">SP</div>
+        <!-- Title and tagline -->
+        <div>
+          <h1>SP Jewellers — Redefining Elegance Worldwide</h1>
+          <div class="sub">Headquarters: Ahmedabad, India • Owner: Prince Soni</div>
+        </div>
+      </div>
+      <!-- Quick contact / location summary -->
+      <div style="text-align:right">
+        <div style="font-weight:700;color:var(--accent)">10 International Showrooms</div>
+        <div class="sub">USA • Canada • China • Japan • and more</div>
+      </div>
+    </header>
+
+    <!-- Hero section summarizing the brand -->
+    <div class="hero">
+      <!-- Left: About and highlights -->
+      <div class="hero-left hero-card">
+        <h2 style="margin:0 0 8px">About SP Jewellers</h2>
+        <p class="desc" style="margin:0 0 12px">SP Jewellers blends traditional Indian craftsmanship with contemporary design. Owned and founded by <strong>Prince Soni</strong>, our main branch is in Ahmedabad, India, and we operate 10 showrooms internationally.</p>
+
+        <!-- Quick bullets -->
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;gap:10px;align-items:flex-start"><div class="pill">✔</div><div><strong>Certified & Licensed</strong><div class="sub">All required licenses for worldwide jewellery trade</div></div></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><div class="pill">★</div><div><strong>Unique Designs</strong><div class="sub">Handcrafted pieces, exclusive collections</div></div></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><div class="pill">🤝</div><div><strong>Customer Trust</strong><div class="sub">Purity certificates and ethical sourcing</div></div></div>
+        </div>
+      </div>
+
+      <!-- Right: Highlight card for licenses -->
+      <div class="hero-right">
+        <div class="hero-card" style="max-width:340px;text-align:left">
+          <h3 style="margin:0 0 6px">✅ Licenses & Certifications</h3>
+          <p class="desc" style="margin:0 0 8px">SP Jewellers holds all mandatory international and national licenses for selling jewellery across the globe. Our products comply with international hallmarking standards.</p>
+          <ul class="desc" style="margin:8px 0 0;padding-left:18px">
+            <li>Licensed to sell in USA, Canada, China, Japan, India</li>
+            <li>Certified purity & ethical sourcing</li>
+            <li>Recognized by global trade authorities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products grid -->
+    <section>
+      <div class="section-title">
+        <div class="pill">Collections</div>
+        <h2 style="margin:0;font-size:18px">Featured Products</h2>
+      </div>
+
+      <!-- Responsive grid of dummy products -->
+      <div class="grid" style="margin-top:12px">
+        <!-- Card 1: Gold Necklace -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=22K+Gold+Necklace" alt="22K Gold Necklace">
+          <h3>22K Gold Necklace Set</h3>
+          <div class="desc">Intricately crafted traditional gold necklace with matching earrings.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$2,999 / ₹2,45,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 2: Gold Bangles -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=Traditional+Gold+Bangles" alt="Gold Bangles">
+          <h3>Traditional Gold Bangles (Set of 2)</h3>
+          <div class="desc">Classic design bangles perfect for festive and bridal wear.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$1,499 / ₹1,22,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 3: Diamond Ring -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=Diamond+Engagement+Ring" alt="Diamond Ring">
+          <h3>Diamond Engagement Ring</h3>
+          <div class="desc">Solitaire diamond ring with premium cut and clarity certificate.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$3,500 / ₹2,85,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 4: Diamond Earrings -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=Elegant+Diamond+Earrings" alt="Diamond Earrings">
+          <h3>Elegant Diamond Earrings</h3>
+          <div class="desc">Delicate drop earrings set with sparkling diamonds.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$1,999 / ₹1,62,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 5: Platinum Couple Bands -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=Platinum+Couple+Bands" alt="Platinum Bands">
+          <h3>Platinum Couple Bands</h3>
+          <div class="desc">Comfort-fit platinum bands symbolizing eternal love.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$2,200 / ₹1,78,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 6: Platinum Pendant -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=Platinum+Pendant+with+Chain" alt="Platinum Pendant">
+          <h3>Platinum Pendant with Chain</h3>
+          <div class="desc">Minimalist pendant crafted from premium platinum.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$1,899 / ₹1,55,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 7: Bridal Necklace Set -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=Bridal+Necklace+%26+Earrings+Set" alt="Bridal Set">
+          <h3>Bridal Necklace & Earrings Set</h3>
+          <div class="desc">Luxurious bridal set designed for grand celebrations.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$7,500 / ₹6,10,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 8: Heavy Bridal Bangles -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x400?text=Heavy+Bridal+Bangles" alt="Bridal Bangles">
+          <h3>Heavy Bridal Bangles (Set of 4)</h3>
+          <div class="desc">Traditional heavy bangles for the bride, highly detailed work.</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+            <div class="price">$3,200 / ₹2,58,000</div>
+            <button style="border:none;padding:8px 10px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700;cursor:pointer">View</button>
+          </div>
+        </article>
+
+        <!-- Card 9: Custom Design CTA -->
+        <article class="card" style="display:flex;align-items:center;justify-content:center;text-align:center;gap:12px;background:linear-gradient(180deg,#fff,#fff)">
+          <div>
+            <h3>Custom Designs</h3>
+            <p class="desc">Get a tailor-made piece crafted just for you. Start with a consultation.</p>
+            <button style="border:none;padding:10px 12px;border-radius:10px;background:#333;color:#fff;font-weight:700;cursor:pointer">Book Consultation</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Info & Why choose us -->
+    <section>
+      <div class="section-title">
+        <div class="pill">About</div>
+        <h2 style="margin:0;font-size:18px">Why Choose SP Jewellers?</h2>
+      </div>
+
+      <div class="info-list" style="margin-top:12px">
+        <div class="info-card">
+          <strong>Owner</strong>
+          <div class="sub">Prince Soni — Founder & Owner of SP Jewellers</div>
+        </div>
+
+        <div class="info-card">
+          <strong>Global Presence</strong>
+          <div class="sub">10 showrooms across USA, Canada, China, Japan, and more — Head office in Ahmedabad, India</div>
+        </div>
+
+        <div class="info-card">
+          <strong>Licenses & Certifications</strong>
+          <div class="sub">All mandatory international and national licences for global sale, purity certificates, ethical sourcing</div>
+        </div>
+
+        <div class="info-card">
+          <strong>Quality Guarantee</strong>
+          <div class="sub">Certified authenticity, hallmarking, and excellent after-sales support</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      © <span id="year"></span> SP Jewellers — Head Office: Ahmedabad, India • Owner: Prince Soni
+    </footer>
+  </div>
+
+  <!-- Small script to set current year and add simple interactivity -->
+  <script>
+    // Set footer year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add simple click handlers to product buttons (demo only)
+    document.querySelectorAll('.card button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Thank you! This is a demo catalog. For purchases contact SP Jewellers.');
+      });
+    });
+  </script>
+</body>
+</html>
